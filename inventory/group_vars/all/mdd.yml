@@ -14,11 +14,11 @@ mdd_device_dir: >-
 # The file pattern for files that specify MDD Data
 mdd_data_patterns:
   - 'oc-*.yml'
-  - 'config-*.yml'
+#  - 'config-*.yml'
 # The data types that MDD will operate on
 mdd_data_types:
   - oc
-  - config
+#  - config
 # The file pattern for files that specify state checks
 mdd_check_patterns:
   - 'check-*.yml'
