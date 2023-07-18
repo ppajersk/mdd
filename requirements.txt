@@ -6,7 +6,7 @@ jsonschema
 ipaddress
 paramiko
 genie
-pyats==23.1
+pyats
 jmespath
 passlib
 botocore
