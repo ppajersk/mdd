@@ -14,3 +14,4 @@ boto3
 nso-oc==2.71.0
 networkx
 scipy
+influxdb

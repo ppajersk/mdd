@@ -1645,6 +1645,36 @@ nodes:
         slot: 7
         label: GigabitEthernet8
         type: physical
+  - id: n24
+    label: telemetry1
+    node_definition: ubuntu
+    x: -1196
+    y: -55
+    configuration: |-
+      #cloud-config
+      hostname: telemetry1
+      manage_etc_hosts: True
+      system_info:
+        default_user:
+          name: ubuntu
+      password: admin
+      chpasswd: { expire: False }
+      ssh_pwauth: True
+      ssh_authorized_keys:
+         - your-ssh-pubkey-line-goes-here
+    hide_links: false
+    ram: 8192
+    cpus: 4
+    cpu_limit: 100
+    data_volume: 0
+    boot_disk_size: 64
+    tags:
+      - telemetry
+    interfaces:
+      - id: i0
+        slot: 0
+        label: ens2
+        type: physical
 links:
   - id: l0
     i1: i0
@@ -1838,3 +1868,9 @@ links:
     i2: i0
     n2: n12
     label: site2-sw1-GigabitEthernet0/2<->site2-host1-enp0s2
+  - id: l32
+    i1: i7
+    n1: n14
+    i2: i0
+    n2: n24
+    label: hq-mgmt-switch-port7<->telemetry-ens2

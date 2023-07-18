@@ -116,3 +116,21 @@ ansible-playbook ciscops.mdd.nso_check_sync
 ```
 
 >Note: Can be run with `--limit=<host>` to limit the scope of the playbook
+
+### TELEMETRY
+
+#### Install TELEMETRY Software
+
+* Install TELEMETRY in server mode
+
+```
+ansible-playbook ciscops.mdd.telemetry_install
+```
+
+#### Remove TELEMETRY Software
+
+* Install TELEMETRY in server mode
+
+```
+ansible-playbook ciscops.mdd.telemetry_clean
+```
