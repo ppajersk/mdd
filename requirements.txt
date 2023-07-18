@@ -6,7 +6,7 @@ jsonschema
 ipaddress
 paramiko
 genie
-pyats
+pyats==23.1
 jmespath
 passlib
 botocore
@@ -14,3 +14,4 @@ boto3
 nso-oc==2.71.0
 networkx
 scipy
+influxdb
